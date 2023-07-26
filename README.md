@@ -91,8 +91,8 @@ The project uses the following external libraries and APIs:
 - Axios: JavaScript library for making HTTP requests to the Trivia API.
 - Redux Toolkit: A predictable state container for managing state in JavaScript apps
 - HTML Entities: Fastest HTML entities library for decoding and encoding text replacing entities to characters or HTML special characters
-- React Modal: Accessible modal dialog component for React.JS
-- HTML and CSS: Markup and styling of the application.
+- React Modal: Accessible modal dialog component for React.JS for dsplaying the final score
+- Tailwind: Styling of the application
 
 ### Contributing
 
