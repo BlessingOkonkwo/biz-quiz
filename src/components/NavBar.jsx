@@ -7,7 +7,7 @@ const NavBar = () => {
     <div className="flex justify-between items-center border-b p-4 shadow-md sticky top-0 bg-white">
       <div>
         <Link to='/'>
-            <h1 className="text-[40px] font-['Pacifico']">
+            <h1 className="md:text-[] font-['Pacifico']">
                 BIZQUIZZ
             </h1>
         </Link>

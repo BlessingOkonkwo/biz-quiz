@@ -18,6 +18,8 @@ const useAxios = ({ url }) => {
     fetchData();
   }, [url]);
 
+  console.log()
+
   return { response, error, loading }
 }
 
