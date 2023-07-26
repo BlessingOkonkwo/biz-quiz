@@ -12,7 +12,7 @@ const Home = () => {
   const { 
     question_category,
     question_difficulty,
-    question_type,
+    // question_type,
     amount_of_questions
   } = useSelector((state) => state.question);
 
@@ -91,7 +91,7 @@ const Home = () => {
             </select>
           </div>
 
-          <div>
+          {/* <div>
             <label htmlFor="type" className='block text-sm text-[#767268] my-2 md:text-center'>Select type:</label>
             <select 
               id="type" 
@@ -104,7 +104,7 @@ const Home = () => {
                 <option value="multiple">Multiple Choice</option>
                 <option value="boolean">True/False</option>
             </select>
-          </div>
+          </div> */}
 
           <div>
             <label htmlFor="categories" className='block text-sm text-[#767268] my-2 md:text-center'>Number of Questions:</label>

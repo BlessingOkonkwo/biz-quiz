@@ -38,21 +38,18 @@ const StartQuiz = () => {
   const dispatch = useDispatch();
   const [modalIsOpen, setIsOpen] = useState(false);
 
-  console.log(options);
-
   const { 
     question_category,
     question_difficulty,
-    question_type,
+    // question_type,
     amount_of_questions,
     score
   } = useSelector((state) => state.question);
 
-  let apiUrl = `api.php?amount=${amount_of_questions}&category=${question_category}&difficulty=${question_difficulty}&type=${question_type}`;
+  let apiUrl = `api.php?amount=${amount_of_questions}&category=${question_category}&difficulty=${question_difficulty}`;
 
 
   const { response, loading } = useAxios({ url: apiUrl });
-  console.log(response);
 
   useEffect(() => {
     if(response?.results.length) {
@@ -62,7 +59,6 @@ const StartQuiz = () => {
         getRandomInt(question.incorrect_answers.length), 0, question.correct_answer
       );
       setOptions(answers);
-      console.log(question);
     }
   }, [response, questionIndex]);
 
@@ -97,12 +93,8 @@ const StartQuiz = () => {
       dispatch(setScore({questionIndex: questionIndex, point: 0}));
     }
   };
-  console.log(`score: ${JSON.stringify(score)}`);
 
   const totalPoints = score.reduce((acc, current) => acc + current.point, 0);
-
-  console.log('totalPoints', totalPoints)
-
 
   const handleReset = () => {
     setQuestionIndex(0);
