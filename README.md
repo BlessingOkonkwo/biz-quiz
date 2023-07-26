@@ -1,70 +1,111 @@
-# Getting Started with Create React App
+# Quiz Application with Trivia API
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a quiz application that allows users to test their knowledge by answering trivia questions from various categories and difficulty levels. The application utilizes the Trivia API to fetch questions and provides a user-friendly interface for the quiz.
 
-## Available Scripts
+## Live URL
 
-In the project directory, you can run:
+The quiz application is deployed and accessible at the following URL:
 
-### `npm start`
+[Live Quiz Application](https://biz-quiz.vercel.app/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+- Choose from a wide range of quiz categories.
+- Select the desired difficulty level for the quiz.
+- Set the number of questions to be included in the quiz (up to a maximum of 10 questions).
+- Restart the quiz at any time.
+- See final score at the end of the quiz.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started
 
-### `npm run build`
+Follow these instructions to set up and run the quiz application on your local machine.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Prerequisites
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Node.js and npm (Node Package Manager) must be installed on your machine.
+- Internet connection is required to fetch trivia questions from the API.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Installation
 
-### `npm run eject`
+1. Clone the repository or download the project files.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+git clone <https://github.com/BlessingOkonkwo/biz-quiz>
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. Navigate to the project directory.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+cd biz-quiz
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. Install the required dependencies.
 
-## Learn More
+```bash
+npm install
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Running the Application
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Start the development server.
 
-### Code Splitting
+```bash
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+2. Open your web browser and go to `http://localhost:3000` to access the quiz application.
 
-### Analyzing the Bundle Size
+### How to Use
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. On the homepage, you will see the quiz options:
+   - Select a category from the available options.
+   - Choose the desired difficulty level (easy, medium, or hard) from the dropdown.
+   - Set the number of questions you want in the quiz (up to a maximum of 10).
+   - Click the "Start Quiz" button to begin the quiz.
 
-### Making a Progressive Web App
+2. You will be presented with a series of trivia questions based on your selected options. Choose the correct answer from the provided choices.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+3. After answering all the questions or whenever you want to restart the quiz, click the "Restart Quiz" button.
 
-### Advanced Configuration
+4. After answering the last question, view your final score by clicking on the "View Result" button.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### State Management
 
-### Deployment
+The application uses state management to handle the following data:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- Number of questions in the quiz.
+- Selected quiz category.
+- Selected difficulty level.
+- Number of correct answers selected and final quiz score
 
-### `npm run build` fails to minify
+### External Libraries and APIs
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The project uses the following external libraries and APIs:
+
+- Trivia API: This API is used to fetch trivia questions based on the user's selected options.
+
+### Technologies Used
+
+- React: JavaScript library for building user interfaces.
+- Axios: JavaScript library for making HTTP requests to the Trivia API.
+- Redux Toolkit: A predictable state container for managing state in JavaScript apps
+- HTML Entities: Fastest HTML entities library for decoding and encoding text replacing entities to characters or HTML special characters
+- React Modal: Accessible modal dialog component for React.JS
+- HTML and CSS: Markup and styling of the application.
+
+### Contributing
+
+If you wish to contribute to this project, feel free to create pull requests with your proposed changes. Please follow the standard coding conventions and ensure that your code is well-documented.
+
+### License
+
+This project is licensed under the [MIT License](LICENSE).
+
+### Acknowledgments
+
+- Thanks to the creators of the Trivia API for providing a great resource for trivia questions.
+
+## Disclaimer
+
+Please note that the trivia questions are provided by a third-party API, and I do not claim any ownership of the questions or their accuracy.
