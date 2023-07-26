@@ -1,11 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import useAxios from '../hooks/useAxios';
-import { useNavigate } from 'react-router-dom';
-import ClickAwayListener from 'react-click-away-listener';
 import { setScore, resetScore } from '../redux/features/questionSlice';
 import {decode} from 'html-entities';
-import ReactDOM from 'react-dom';
 import Modal from 'react-modal';
 
 const customStyles = {
@@ -99,8 +96,6 @@ const StartQuiz = () => {
     } else {
       dispatch(setScore({questionIndex: questionIndex, point: 0}));
     }
-  //  console.log(`score: ${score}`);
-  //  console.log(selected);
   };
   console.log(`score: ${JSON.stringify(score)}`);
 
